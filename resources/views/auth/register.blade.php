@@ -3,10 +3,30 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col m4 offset-m4 center-align">
+            <div>Register</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m4 offset-m4">
+            <form class="col s12" method="POST" action="{{ route('register') }}">
+                {{ csrf_field() }}
+                <!-- <div class="row"> -->
+                    <div class="input-field col s12">
+                        <input id="first_name" type="text" class="validate" placeholder="First Name">
+                        <!-- <label for="first_name">First Name</label> -->
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="row"> -->
+                    <div class="input-field col s12">
+                        <input id="last_name" type="text" class="validate" placeholder="Last Name">
+                        <!-- <label for="last_name">Last Name</label> -->
+                    </div>
+                <!-- </div> -->
+            </form>
+        </div>
+<!-- <div class="col m8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
@@ -71,7 +91,8 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
     </div>
 </div>
 @endsection
