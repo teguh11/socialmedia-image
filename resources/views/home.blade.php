@@ -1,31 +1,22 @@
 @extends('layouts.app')
-<style type="text/css">
-    .border{border: 1px solid black;}
-</style>
+
 @section('content')
 <div class="container">
     <div class="row">
-        <!-- Profile  -->
-        <div class="col-md-3 border">
+        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-                </div>
+                <div class="panel-heading">Dashboard</div>
+
                 <div class="panel-body">
-                    <a href="#" class="thumbnail" style="border-radius: 50%">
-                        <img src="https://dummyimage.com/1000" alt="..." style="border-radius: 50%">
-                    </a>
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
                 </div>
             </div>
-        </div>
-        <!-- your timeline -->
-        <div class="col-md-6 border">
-            asdad
-        </div>
-
-        <!-- other widget. like ads, etc -->
-        <div class="col-md-3 border">
-            asdasd
         </div>
     </div>
 </div>

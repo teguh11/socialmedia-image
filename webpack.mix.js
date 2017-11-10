@@ -18,8 +18,8 @@ mix.js('resources/assets/js/app.js', 'public/js/app.js');
 
 // change sass to css
 mix.sass('resources/assets/sass/app.scss', 'public/css/app.css').
-	sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css/bootstrap.css');
-	// sass('node_modules/materialize-css/sass/materialize.scss', 'public/css/materialize.css');
+	// sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css/bootstrap.css');
+	sass('node_modules/materialize-css/sass/materialize.scss', 'public/css/materialize.css');
 
 // copy font
 // mix.copy('node_modules/materialize-css/dist/fonts', 'publ')
